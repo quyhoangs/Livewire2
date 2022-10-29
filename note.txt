@@ -1,0 +1,18 @@
+
+composer require livewire/livewire
+php artisan make:livewire hello-word
+
+Lệnh trên tạo ra 2 File
+
+hello-word.blade.php
+HelloWord.php
+...
+    @livewireStyles
+</head>
+<body>
+    ...
+    <livewire:hello-word />
+
+    @livewireScripts
+</body>
+</html>
