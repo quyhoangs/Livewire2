@@ -7,4 +7,11 @@
         <option>Yo</option>
     </select>
     {{implode(', ', $greeting)}} {{$name}} @if($loud) ! @endif
+
+
+    <form action="#" wire:submit.prevent="$set('name', 'Luis')" >
+        <button>Reset Name</button>
+    </form>
+
+
 </div>

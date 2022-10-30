@@ -23,3 +23,29 @@ Bên trong, Livewire sẽ lắng nghe event trên phần tử và khi được k
 
 • multiple Trong thẻ Select cho phép chọn nhiều option
 Bên component cần khai báo biến greeting là 1 mảng đề chứa các giá trị đó
+-------------------------------------------
+3.Action
+•Các cách để Reset 1 Input Name
+
+3.1 Không cần truyền Param
+
+public function resetName(){
+    $this->name = 'Tên bạn muốn reset';
+}
+
+<button wire:click = "resetName">Reset Name</button>
+
+3.2 Truyền Param
+public function resetName($name = 'chicago'){
+    $this->name = $name;
+}
+
+<form action="#" wire:submit.prevent="resetName('Bingo')" >
+    <button>Reset Name</button>
+</form>
+
+3.3 Chỉ muốn khi kích vào btn này thì thay đổi 1 thuộc tính khác chứ không cần viết hàm xử lý như sau :
+    <form action="#" wire:submit.prevent="$set('name', 'Luis')" >
+        <button>Reset Name</button>
+    </form>
+Bên Component không cần viết gì cả .

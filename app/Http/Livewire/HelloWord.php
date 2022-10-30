@@ -10,6 +10,10 @@ class HelloWord extends Component
     public $loud = false;
     public $greeting = ['Hello'];
 
+    public function resetName(){
+        $this->name = 'Tên bạn muốn reset';
+    }
+
     public function render()
     {
         return view('livewire.hello-word');
