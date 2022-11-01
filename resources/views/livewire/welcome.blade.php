@@ -8,8 +8,7 @@
     @livewireStyles
 </head>
 <body>
-    <livewire:hello-word />
-
+    @livewire('hello-word', ['name' => 'chico'] )
     @livewireScripts
 </body>
 </html>

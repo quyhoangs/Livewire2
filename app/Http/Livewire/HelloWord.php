@@ -7,11 +7,14 @@ use Livewire\Component;
 class HelloWord extends Component
 {
     public $name = 'Quý Hoàng';
-    public $loud = false;
-    public $greeting = ['Hello'];
 
-    public function resetName(){
-        $this->name = 'Tên bạn muốn reset';
+    public function mount($name){
+        $this->name = $name;
+    }
+
+    public function updatedName()
+    {
+        $this->name = strtoupper($this->name);
     }
 
     public function render()

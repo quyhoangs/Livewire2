@@ -44,7 +44,8 @@ public function resetName($name = 'chicago'){
     <button>Reset Name</button>
 </form>
 
-3.3 Chỉ muốn khi kích vào btn này thì thay đổi 1 thuộc tính khác chứ không cần viết hàm xử lý như sau :
+3.3 Chỉ muốn khi kích vào btn này thì thay đổi 1 thuộc tính khác chứ không cần viết hàm
+xử lý như sau :
     <form action="#" wire:submit.prevent="$set('name', 'Luis')" >
         <button>Reset Name</button>
     </form>
