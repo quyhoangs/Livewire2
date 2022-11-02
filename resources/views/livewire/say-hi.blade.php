@@ -1,4 +1,4 @@
 <div>
    Hello {{ $name }} {{ now() }}
-   <button wire:click="$refresh">refresh</button>
+   <button wire:click="emitChild">refresh</button>
 </div>
