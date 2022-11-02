@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class HelloWord extends Component
 {
-    public $name = 'Quý Hoàng';
+    public $names = ['Luis', 'Bingo', 'Chicago'];
 
     public function mount($name){
         $this->name = $name;
