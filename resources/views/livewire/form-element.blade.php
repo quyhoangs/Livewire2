@@ -8,3 +8,5 @@
     </label> <br><br>
     Message: {{ $message }}
 </div>
+<br><br>
+<br><br>

@@ -4,5 +4,6 @@
 
    @livewire('auth.register')
    @livewire('form-element')
+   @livewire('check-box')
 
 @endsection
